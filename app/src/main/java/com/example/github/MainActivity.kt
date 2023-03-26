@@ -22,16 +22,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-    val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        val navHostController =
-            supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
-        navController = navHostController.findNavController()
-        bottomNavigationView.setupWithNavController(navController)
     }
 
-    fun visiblityOfBottomNavigation(visiblity: Int){
-        binding.bottomNavigation.visibility = visiblity
-    }
+
+    /* val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+         val navHostController =
+             supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
+         navController = navHostController.findNavController()
+         bottomNavigationView.setupWithNavController(navController)
+     }*/
 }

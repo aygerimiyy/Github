@@ -7,7 +7,7 @@ import com.example.github.MainActivity
 import com.example.github.R
 import com.example.github.databinding.FragmentHomeBinding
 
-class HomeFragment:Fragment(R.layout.fragment_home) {
+class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private lateinit var binding: FragmentHomeBinding
 
@@ -18,13 +18,11 @@ class HomeFragment:Fragment(R.layout.fragment_home) {
 
         binding.apply {
         }
-        }
+    }
 
 
-
-
-        override fun onResume() {
-            super.onResume()
-            (requireActivity() as MainActivity).visiblityOfBottomNavigation(View.VISIBLE)
-        }
+    override fun onResume() {
+        super.onResume()
+        //(requireActivity() as MainActivity).visiblityOfBottomNavigation(View.VISIBLE)
+    }
 }

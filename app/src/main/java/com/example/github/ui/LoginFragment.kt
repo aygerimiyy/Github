@@ -1,8 +1,6 @@
 package com.example.github.ui
 
-import android.content.Intent
 import android.net.Uri
-import android.o//s.Binder
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -37,7 +35,8 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     private fun initListener() {
         binding.apply {
             btnSignInWith.setOnClickListener {
-                vm.user()
+                //vm.user()
+                navController.navigate(R.id.action_loginFragment_to_mainFragment)
                 /*val intent = Intent(
                     Intent.ACTION_VIEW,
                     Uri.parse("https://github.com/login/oauth/authorize?client_id=8f3cf5f09bd0c93a0528&scope=repo")
