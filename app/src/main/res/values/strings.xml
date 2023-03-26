@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="by_signing_in_you_accept_our_terms_of_use_and_privacy_policy">
+        By signing in you accept our <a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Terms of use</a>
+       <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Privacy policy</a>.</string>
+</resources>
