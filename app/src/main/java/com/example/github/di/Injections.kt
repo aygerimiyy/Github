@@ -1,7 +1,11 @@
 package com.example.github.di
 
 import com.example.github.data.remote.ApiInterface
+<<<<<<< Updated upstream
 import com.example.github.domain.MainRepository
+=======
+import com.example.github.presentation.UserVM
+>>>>>>> Stashed changes
 import com.example.github.presentation.MainViewModel
 import com.example.github.presentation.SearchViewModel
 import okhttp3.OkHttpClient
