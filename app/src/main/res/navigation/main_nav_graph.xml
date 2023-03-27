@@ -7,15 +7,27 @@
     <fragment
         android:id="@+id/home"
         android:name="com.example.github.ui.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_home_to_notification"
+            app:destination="@id/notification" />
+    </fragment>
     <fragment
         android:id="@+id/explore"
         android:name="com.example.github.ui.ExploreFragment"
-        android:label="ExploreFragment" />
+        android:label="ExploreFragment" >
+        <action
+            android:id="@+id/action_explore_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
     <fragment
         android:id="@+id/notification"
         android:name="com.example.github.ui.NotificationsFragment"
-        android:label="NotificationsFragment" />
+        android:label="NotificationsFragment" >
+        <action
+            android:id="@+id/action_notification_to_explore"
+            app:destination="@id/explore" />
+    </fragment>
     <fragment
         android:id="@+id/profile"
         android:name="com.example.github.ui.ProfileFragment"

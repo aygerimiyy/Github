@@ -29,7 +29,7 @@
         android:background="@drawable/shape_btn"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_sign_in_enterprize"
+            android:id="@+id/btn_sign_in_enterprise"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:text="Sign in without github enterprise"
@@ -40,11 +40,13 @@
             android:letterSpacing="0.03"
             android:textColor="@color/black"
             android:background="@drawable/shape_btn2_login"/>
+
+
     <TextView
         android:id="@+id/tv_login_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btn_sign_in_enterprize"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_in_enterprise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"

@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_loginFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signInfragment"
+            app:destination="@id/signInfragment" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
@@ -25,4 +28,12 @@
         android:id="@+id/mainFragment"
         android:name="com.example.github.ui.MainFragment"
         android:label="MainFragment" />
+    <fragment
+        android:id="@+id/signInfragment"
+        android:name="com.example.github.ui.SignInfragment"
+        android:label="SignInfragment" >
+        <action
+            android:id="@+id/action_signInfragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
 </navigation>

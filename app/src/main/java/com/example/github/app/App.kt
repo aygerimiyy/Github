@@ -1,11 +1,13 @@
 package com.example.github.app
 
 import android.app.Application
-import com.example.github.di.networkModule
+import com.example.github.di.appModule
 import com.example.github.di.viewModelModule
+
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidFileProperties
 import org.koin.android.ext.koin.androidLogger
+import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.context.startKoin
 
 class App: Application() {
@@ -18,8 +20,7 @@ class App: Application() {
         instance = this
         val modules =
             listOf(
-                viewModelModule,
-                networkModule
+                appModule, viewModelModule
             )
 
         startKoin {

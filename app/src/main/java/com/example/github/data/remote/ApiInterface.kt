@@ -1,11 +1,11 @@
-package com.example.github
+package com.example.github.data.remote
 
-import com.example.github.data.models.UserResponse
+import com.example.github.data.models.*
 import retrofit2.Response
 import retrofit2.http.*
 
 interface ApiInterface {
-    /*@Headers("Accept: application/json")
+    @Headers("Accept: application/json")
     @POST("https://github.com/login/oauth/access_token")
     @FormUrlEncoded
     suspend fun getAccessToken(
@@ -18,15 +18,15 @@ interface ApiInterface {
     suspend fun getUserProfileInfo(): Response<GetUserProfileInfo>
 
     @GET("/user/repos")
-    suspend fun getUserRepositories(): Response<List<RepositoryItem>>
+    suspend fun getUserRepositories(): Response<List<RepositoryResponse>>
 
     @GET("/search/users?q")
     suspend fun searchUsersByUsername(
         @Query("q") username: String,
-    ): Response<SearchUsersByUsername>
+    ): Response<SearchUserByUsername>
 
     @GET("/search/repositories?q")
     suspend fun searchRepositoriesByRepositoryName(
         @Query("q") name: String,
-    ): Response<SearchRepositoriesByRepositoryName>*/
+    ): Response<SearchRepositoriesByRepositoryName>
 }
